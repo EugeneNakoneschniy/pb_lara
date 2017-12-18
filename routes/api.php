@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::post('/user', [
     'uses' => 'UserController@store'
 ]);
+Route::get('/user', function(){
+    return "Ok";
+});
 Route::post('/user/signin', [
     'uses' => 'UserController@signin'
 ]);
